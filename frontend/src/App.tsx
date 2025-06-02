@@ -1,5 +1,14 @@
 import React from "react";
+import Sidebar from "./components/Sidebar";
+import ProductList from "./pages/ProductList";
+import Layout from "./components/Layout";
 
-const App = () => <h1>Hello from React + TypeScript + Vite!</h1>;
+const App = () => {
+  return (
+    <Layout>
+      <ProductList />
+    </Layout>
+  );
+};
 
 export default App;
