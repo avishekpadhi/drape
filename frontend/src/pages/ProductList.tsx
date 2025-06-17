@@ -1,35 +1,33 @@
 import React, { useEffect, useState } from "react";
 import { Product } from "../types";
 import Listcard from "../components/ListCard";
+import axios from "axios";
 
 const ProductList = () => {
   const [products, setProducts] = useState<Product[]>([]);
 
+  // const fetchProducts = async () => {
+  //   const res = await fetch("/src/mocks/mock_products.json");
+  //   const data = await res.json();
+  //   console.log(data, "hello0");
+  //   setProducts(data);
+  // };
+  //
+
+  const fetchProducts = async () => {
+    const productsData = await axios.get("/src/mocks/mock_products.json");
+    console.log(productsData);
+    setProducts(productsData.data);
+  };
   useEffect(() => {
-    const fetchProducts = async () => {
-      const res = await fetch("https://fakestoreapi.com/products");
-      const data = await res.json();
-      setProducts(data);
-    };
+    fetchProducts();
   }, []);
 
   return (
-    <div className="grid grid-cols-4 gap-10">
-      <Listcard />
-      <Listcard />
-      <Listcard />
-      <Listcard />
-      <Listcard />
-      <Listcard />
-      <Listcard />
-      <Listcard />
-      <Listcard />
-      <Listcard />
-      <Listcard />
-      <Listcard />
-      <Listcard />
-      <Listcard />
-      <Listcard />
+    <div className="grid grid-cols-4 2xl:grid-cols-5 gap-2">
+      {products.map((product) => (
+        <Listcard key={product.id} product={product} />
+      ))}
     </div>
   );
 };

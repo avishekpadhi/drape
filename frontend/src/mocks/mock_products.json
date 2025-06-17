@@ -1,0 +1,688 @@
+[
+  {
+    "id": 1,
+    "title": "Draped vest top",
+    "price": 129,
+    "colour": "blue",
+    "gender": "woman",
+    "description": "Soft texture that feels great on skin.",
+    "category": "topwear",
+    "image": "https://image.hm.com/assets/hm/1b/10/1b10b2823bdd906ce0c6905e3e33a476423b5ae6.jpg?imwidth=1536",
+    "images": [
+      "https://image.hm.com/assets/hm/1b/10/1b10b2823bdd906ce0c6905e3e33a476423b5ae6.jpg?imwidth=1536",
+      "https://image.hm.com/assets/hm/88/f4/88f48071d30365879753643d8303874245a6ab04.jpg?imwidth=1536",
+      "https://image.hm.com/assets/hm/95/3d/953d4ce8945bef19fbefaccbfa7062ff8fec6914.jpg?imwidth=1536",
+      "https://image.hm.com/assets/hm/0f/4d/0f4d852d801c04186fe72aca192627ad8d36aace.jpg?imwidth=1536"
+    ],
+    "rating": {
+      "rate": 4.7,
+      "count": 44
+    }
+  },
+  {
+    "id": 2,
+    "title": "Draped vest top",
+    "price": 188,
+    "colour": "black",
+    "gender": "woman",
+    "description": "Durable and stylish design.",
+    "category": "topwear",
+    "image": "https://image.hm.com/assets/hm/fd/41/fd4127d921b7f29951d0d5d2ede3f88d5e2a91e6.jpg?imwidth=1536",
+    "images": [
+      "https://image.hm.com/assets/hm/fd/41/fd4127d921b7f29951d0d5d2ede3f88d5e2a91e6.jpg?imwidth=1536",
+      "https://image.hm.com/assets/hm/c5/ef/c5efe480faf7f6bf118611878d22e26096f5bb53.jpg?imwidth=1536",
+      "https://image.hm.com/assets/hm/fe/1a/fe1ab65d257eb7bbb68a9ded96227d5e5001dd8e.jpg?imwidth=1536",
+      "https://image.hm.com/assets/hm/69/31/6931940568ad013b7f28677d27e269c5c6aff837.jpg?imwidth=1536"
+    ],
+    "rating": {
+      "rate": 4.3,
+      "count": 417
+    }
+  },
+  {
+    "id": 3,
+    "title": "Draped vest top",
+    "price": 180,
+    "colour": "yellow",
+    "gender": "woman",
+    "description": "Perfect for casual and formal occasions.",
+    "category": "topwear",
+    "image": "https://image.hm.com/assets/hm/fe/67/fe67743908770ed2ec87bbb049a540179e2a481b.jpg?imwidth=1536",
+    "images": [
+      "https://image.hm.com/assets/hm/fe/67/fe67743908770ed2ec87bbb049a540179e2a481b.jpg?imwidth=1536",
+      "https://image.hm.com/assets/hm/fc/89/fc89b4cf66e804545e2092e183e295b1f66be793.jpg?imwidth=1536",
+      "https://image.hm.com/assets/hm/f8/1f/f81fb1943d70a237739deec97293798ef51028b2.jpg?imwidth=1536",
+      "https://image.hm.com/assets/hm/da/84/da8473a30dca20686edf30cd4afc9608447ce81f.jpg?imwidth=1536"
+    ],
+    "rating": {
+      "rate": 4.6,
+      "count": 82
+    }
+  },
+  {
+    "id": 4,
+    "title": "Textured jersey top",
+    "price": 677,
+    "colour": "blue",
+    "gender": "woman",
+    "description": "Limited edition, grab yours now!",
+    "category": "topwear",
+    "image": "https://image.hm.com/assets/hm/31/ca/31cad3c9c688222534836712963f723c43a0ed94.jpg?imwidth=1536",
+    "images": [
+      "https://image.hm.com/assets/hm/31/ca/31cad3c9c688222534836712963f723c43a0ed94.jpg?imwidth=1536",
+      "https://image.hm.com/assets/hm/f0/a9/f0a98b5c77dba6964dcb75efe1e294f6ca2dbd40.jpg?imwidth=1536",
+      "https://image.hm.com/assets/hm/9a/88/9a88e8b406bb14cd1110dc1778a2aa054b3ee18e.jpg?imwidth=1536",
+      "https://image.hm.com/assets/hm/bc/bf/bcbf9471ad3737461039b296c3893025851c4dfb.jpg?imwidth=1536"
+    ],
+    "rating": {
+      "rate": 3.5,
+      "count": 268
+    }
+  },
+  {
+    "id": 5,
+    "title": "Polarized sunglass",
+    "price": 399,
+    "description": "Timeless piece to add to your wardrobe.",
+    "category": "accessory",
+    "colour": "black",
+    "gender": "unisex",
+    "image": "https://image.hm.com/assets/hm/0a/99/0a996ec690e701ec7b8fbf18052fb402c77329bf.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/0a/99/0a996ec690e701ec7b8fbf18052fb402c77329bf.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/0c/d7/0cd7098867c152338f2f6a6cbcfe72f54c3be81f.jpg?imwidth=1536"
+    ],
+    "rating": {
+      "rate": 4.1,
+      "count": 484
+    }
+  },
+  {
+    "id": 5,
+    "title": "Polarized sunglass",
+    "price": 399,
+    "description": "Timeless piece to add to your wardrobe.",
+    "category": "accessory",
+    "colour": "black",
+    "gender": "unisex",
+    "image": "https://image.hm.com/assets/hm/5b/e3/5be3a7530fb8b6c5ea57dc6da238535049882e5c.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/5b/e3/5be3a7530fb8b6c5ea57dc6da238535049882e5c.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/63/78/6378376217265a23141839a90416936ffcbb6854.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.1,
+      "count": 484
+    }
+  },
+  {
+    "id": 6,
+    "title": "Regular Fit T shirt",
+    "price": 399,
+    "description": "A classic T shirt designed for perfect everyday wear.",
+    "category": "topwear",
+    "colour": "brown",
+    "gender": "man",
+    "image": "https://image.hm.com/assets/hm/83/49/8349bac20a1aca7a3ed8bf8ab1b65567713b51b3.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/83/49/8349bac20a1aca7a3ed8bf8ab1b65567713b51b3.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/67/e5/67e52017ca674e639535a342030963732057134d.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/a5/0b/a50b7b9665925edd2412b0b222b8a55192de7f55.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/9c/e6/9ce60ac78ae3b982d9c064716a7a7a789c5c2420.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.3,
+      "count": 312
+    }
+  },
+  {
+    "id": 8,
+    "title": "Brown Polo T-Shirt",
+    "price": 899,
+    "description": "Classic brown polo t-shirt made from soft, breathable cotton fabric. Perfect for casual and semi-formal wear.",
+    "category": "topwear",
+    "colour": "brown",
+    "gender": "man",
+    "image": "https://image.hm.com/assets/hm/39/8e/398e353ed9cb2a342f3dae5f986dd538f13933a9.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/39/8e/398e353ed9cb2a342f3dae5f986dd538f13933a9.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/1f/56/1f56b0385823063452e9d188c33d282efdf9420e.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/ed/96/ed9602165a443d4251f1e61f5e94867cab2d72a8.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/6f/de/6fde83ead0366f5840feac368ae8d8aeb9f681cd.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.0,
+      "count": 215
+    }
+  },
+  {
+    "id": 9,
+    "title": "Green Polo T-Shirt",
+    "price": 949,
+    "description": "Soft and breathable green polo t-shirt made from premium cotton. Ideal for casual and smart-casual looks.",
+    "category": "topwear",
+    "colour": "green",
+    "gender": "man",
+    "image": "https://image.hm.com/assets/hm/f7/d5/f7d547c4bcc888a4991ca14b379aab92f4b3d233.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/f7/d5/f7d547c4bcc888a4991ca14b379aab92f4b3d233.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/df/03/df032b8aa623e2c432aec01aaaa4ea9b2afcc9cb.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/72/db/72db42457e1ce5042cfb2e21a6cd858465b7709a.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/c4/da/c4dad365a06fdc29692403bbf5379dfc6b8bd9a0.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.2,
+      "count": 189
+    }
+  },
+  {
+    "id": 10,
+    "title": "Black Polo T-Shirt",
+    "price": 925,
+    "description": "Classic black polo t-shirt crafted from soft cotton fabric for everyday comfort and style.",
+    "category": "topwear",
+    "colour": "black",
+    "gender": "man",
+    "image": "https://image.hm.com/assets/hm/76/87/7687d14effdcc0beec5a2e3eb553045ff106d778.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/76/87/7687d14effdcc0beec5a2e3eb553045ff106d778.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/57/9c/579c93a0866673eb027b28d6e3805a391fbe20ea.jpg?imwidth=2160",
+      "https://image.hm.com/assets/hm/1b/9a/1b9a40df036db9f0eeaf83ccda1a5c1445f1e93a.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.4,
+      "count": 198
+    }
+  },
+  {
+    "id": 11,
+    "title": "Slim Fit Vest Top",
+    "price": 699,
+    "description": "A sleek and stylish slim fit vest top, perfect for layering or wearing on its own during warmer days.",
+    "category": "topwear",
+    "colour": "black",
+    "gender": "man",
+    "image": "https://image.hm.com/assets/hm/cd/43/cd43c725d7497d736cf972d8a6fc72e56bb9fabd.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/cd/43/cd43c725d7497d736cf972d8a6fc72e56bb9fabd.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/a7/ae/a7ae36140a8d16f916e56d5361092b54154ba9ae.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.1,
+      "count": 128
+    }
+  },
+  {
+    "id": 12,
+    "title": "Delicate Necklace",
+    "price": 549,
+    "description": "A stylish and delicate necklace perfect for adding a subtle shine to any outfit.",
+    "category": "accessory",
+    "colour": "silver",
+    "gender": "unisex",
+    "image": "https://image.hm.com/assets/hm/e6/e9/e6e96c8a3d9081599da0733691fd9e0b925efa3c.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/e6/e9/e6e96c8a3d9081599da0733691fd9e0b925efa3c.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/93/d6/93d63d66492f98aff05ffa0137a4e1398e9a58aa.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.5,
+      "count": 210
+    }
+  },
+  {
+    "id": 13,
+    "title": "Brown Vest Top",
+    "price": 799,
+    "description": "A comfortable and stylish brown vest top designed for men, perfect for layering or casual wear.",
+    "category": "topwear",
+    "colour": "brown",
+    "gender": "man",
+    "image": "https://image.hm.com/assets/hm/0f/af/0faf201290f09dfc0680c54836b07fcc433e1b9d.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/0f/af/0faf201290f09dfc0680c54836b07fcc433e1b9d.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/cd/10/cd10cdd1d310302cd39a94e76fe6cd25e9c60785.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/58/da/58da0cd276e42d96af85fe75d3b28c4ff0da4385.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/fa/da/fada9469ce9d6a1f41345a6bd18d4e4636c64883.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.2,
+      "count": 145
+    }
+  },
+  {
+    "id": 14,
+    "title": "Wide White Trousers",
+    "price": 1299,
+    "description": "Elegant wide-leg white trousers for women, offering a comfortable fit and versatile style for any occasion.",
+    "category": "bottomwear",
+    "colour": "white",
+    "gender": "woman",
+    "image": "https://image.hm.com/assets/hm/e9/18/e9186e2c7f8f45521a070c4869c30d9f196b9b86.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/e9/18/e9186e2c7f8f45521a070c4869c30d9f196b9b86.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/fd/62/fd62bf46647bf6d524a4896069a24d59bd40a2c2.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/3f/fd/3ffdf9679617c972ae00d710891724f48684687c.jpg?imwidth=2160",
+      "https://image.hm.com/assets/hm/8c/17/8c17187b93eb144c816f0ec30f15011e6cc41c1d.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.4,
+      "count": 198
+    }
+  },
+  {
+    "id": 15,
+    "title": "Yellow Skirt",
+    "price": 899,
+    "description": "A bright and cheerful yellow skirt for women, perfect for casual outings and sunny days.",
+    "category": "bottomwear",
+    "colour": "yellow",
+    "gender": "woman",
+    "image": "https://image.hm.com/assets/hm/61/ff/61ff48f597c9c92ea1505d14800fded07b313ed0.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/61/ff/61ff48f597c9c92ea1505d14800fded07b313ed0.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/ae/77/ae7715e6743dd4dde8f2adcbe172a4e54ab009d6.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/61/ff/61ff48f597c9c92ea1505d14800fded07b313ed0.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/c2/d2/c2d2cac94f84d89e30448453277918b7e81bb686.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.0,
+      "count": 125
+    }
+  },
+  {
+    "id": 16,
+    "title": "White Vest Top",
+    "price": 799,
+    "description": "A sleek white vest top for women, perfect for layering or wearing on its own for a fresh, casual look.",
+    "category": "topwear",
+    "colour": "white",
+    "gender": "woman",
+    "image": "https://image.hm.com/assets/hm/0d/9a/0d9ac04b3d3309f81fde725158f8daf4a72af3c8.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/0d/9a/0d9ac04b3d3309f81fde725158f8daf4a72af3c8.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/be/2d/be2d6c60d390a5a35965e504dd73a3a9bb94b1d5.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/bd/4a/bd4a301b7b3fc4eb378743ea9b7ee7481ef3ff74.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/06/c0/06c0b83f8b40015b9c0c094ab77616832c843f86.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.2,
+      "count": 178
+    }
+  },
+  {
+    "id": 17,
+    "title": "Brown Sweatshirt Shorts",
+    "price": 1299,
+    "description": "Comfortable brown sweatshirt shorts for women, perfect for casual wear or lounging.",
+    "category": "bottomwear",
+    "colour": "brown",
+    "gender": "woman",
+    "image": "https://image.hm.com/assets/hm/93/1a/931aeefcde4bf0f1833610eb223a8a075cf7af2f.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/93/1a/931aeefcde4bf0f1833610eb223a8a075cf7af2f.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/72/91/729135f8289a9827bc9bce34d5b2084a93a4b40a.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/60/14/60142731e7c35b08baa33afdbee1c1e12d8fc653.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/4f/27/4f2754f8da467fbd6fe641a2de542f7aa62191d8.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.8,
+      "count": 215
+    }
+  },
+  {
+    "id": 18,
+    "title": "Black Sweatshirt Shorts",
+    "price": 1299,
+    "description": "Casual black sweatshirt shorts for women, designed for comfort and everyday wear.",
+    "category": "bottomwear",
+    "colour": "black",
+    "gender": "woman",
+    "image": "https://image.hm.com/assets/hm/c4/1c/c41ca9bd91043b6c5c0bff90c9fad2f13fd62e70.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/c4/1c/c41ca9bd91043b6c5c0bff90c9fad2f13fd62e70.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/e3/2b/e32b0b989c05c3be7206bc4d9d2880a3969cf5db.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/44/2c/442c52a78bce8464f4e0a78618cf59cf7f51b607.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/d8/45/d845494a6a93a332077d208525b059184a39cbd3.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.2,
+      "count": 198
+    }
+  },
+  {
+    "id": 19,
+    "title": "Black Zipped Oversized Hoodie",
+    "price": 1799,
+    "description": "A sleek and versatile black zip-up hoodie for women, perfect for layering in any season.",
+    "category": "topwear",
+    "colour": "black",
+    "gender": "woman",
+    "image": "https://image.hm.com/assets/hm/bc/93/bc938bdf68b118da75ddee861e98f00675ef74d3.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/bc/93/bc938bdf68b118da75ddee861e98f00675ef74d3.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/65/77/65776168dd388b1c48e594ce25bc0831846e3689.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/3a/f2/3af2efcafbcfb76b9394384ed2b010aa7bdc9a20.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/c7/ef/c7effd0824df1774eb3819de991b76dda7332f52.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.5,
+      "count": 276
+    }
+  },
+  {
+    "id": 20,
+    "title": "Relaxed Fit Black Jeans",
+    "price": 2299,
+    "description": "Comfortable and modern relaxed fit black jeans for men, perfect for casual everyday wear.",
+    "category": "bottomwear",
+    "colour": "black",
+    "gender": "man",
+    "image": "https://image.hm.com/assets/hm/d8/d0/d8d08bfdfc5a80e4bb99bb5e09b9a77e5a5302f1.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/d8/d0/d8d08bfdfc5a80e4bb99bb5e09b9a77e5a5302f1.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/0d/23/0d2339a1371d20e35dc7cfbbc1874e24293508fa.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/ae/74/ae740076c27069d5fef5797d816981fea2dc0912.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/45/2b/452b305e2c447dd54eb15f3eab68b7a5cf40355b.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.4,
+      "count": 198
+    }
+  },
+  {
+    "id": 21,
+    "title": "Oversized Cream Suit Jacket",
+    "price": 3999,
+    "description": "Sophisticated oversized cream suit jacket for men, offering a relaxed silhouette and contemporary style. Ideal for formal and smart-casual occasions.",
+    "category": "topwear",
+    "colour": "white",
+    "gender": "man",
+    "image": "https://image.hm.com/assets/hm/ef/b7/efb7eebb1ea993fb055e6c5ef93649f7c1583c24.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/ef/b7/efb7eebb1ea993fb055e6c5ef93649f7c1583c24.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/0e/ec/0eec583d897c404cc3c0a6263feda4272fd45aaf.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/ed/7a/ed7a035f06571adc811709b3a90b0d93ca0412a1.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/ec/ca/eccac8d9d81f4edb05f00d2a417d8a2d102c2fc0.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.4,
+      "count": 221
+    }
+  },
+  {
+    "id": 22,
+    "title": "Classic Black Leather Belt",
+    "price": 799,
+    "description": "A sleek and timeless black leather belt featuring a silver buckle, perfect for both formal and casual outfits.",
+    "category": "accessories",
+    "colour": "black",
+    "gender": "unisex",
+    "image": "https://image.hm.com/assets/hm/60/f6/60f620f3df209f8312568826e3844d646b4ee708.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/60/f6/60f620f3df209f8312568826e3844d646b4ee708.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/65/e4/65e426aadc4e4c01d9fe9d6a00c7f708cdbaec42.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.4,
+      "count": 89
+    }
+  },
+  {
+    "id": 23,
+    "title": "Slim Fit Blue Shirt",
+    "price": 1299,
+    "description": "A sharp slim fit blue shirt for men made from soft cotton fabric. Perfect for office wear or semi-formal outings, offering both comfort and clean style.",
+    "category": "topwear",
+    "colour": "blue",
+    "gender": "man",
+    "image": "https://image.hm.com/assets/hm/57/73/57733e4a54dcb1b3afe1a4dbfc69805c2f6c8b09.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/57/73/57733e4a54dcb1b3afe1a4dbfc69805c2f6c8b09.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/76/08/760823259e9b56f7f12292ae5dc6fe8428b4fa3f.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/40/78/4078be7035442f6e3a691edff5add5cb01e51e75.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/39/43/39436d0f6e0d97e91dc9f29b2572bc5db3d74277.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.6,
+      "count": 215
+    }
+  },
+  {
+    "id": 24,
+    "title": "Golden Hoop Earrings",
+    "price": 599,
+    "description": "Elegant golden hoop earrings for women, designed to add a touch of sophistication to both casual and formal outfits. Lightweight and timeless.",
+    "category": "accessories",
+    "colour": "gold",
+    "gender": "woman",
+    "image": "https://image.hm.com/assets/hm/61/90/6190ec6dd30271866df1de1b5414bf72d4d2e986.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/61/90/6190ec6dd30271866df1de1b5414bf72d4d2e986.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/54/47/5447ddb73173e4e7f35f978ab48f0d8f402be08b.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/98/7e/987e95023a84e70df49167612b24f507a1eb8acb.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.4,
+      "count": 98
+    }
+  },
+  {
+    "id": 25,
+    "title": "Beige Shoulder Handbag",
+    "price": 2299,
+    "description": "Chic beige shoulder handbag for women, combining fashion and functionality with a minimalist design. Perfect for everyday use or special outings.",
+    "category": "accessories",
+    "colour": "beige",
+    "gender": "woman",
+    "image": "https://image.hm.com/assets/hm/63/33/63334d79a8bd9bf97f2e435aa02acf79dbbbbba5.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/63/33/63334d79a8bd9bf97f2e435aa02acf79dbbbbba5.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/e7/68/e7684f71b24c4a5d27930103ba150c5b82746ae2.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/f7/92/f792c22dc447c9d0d7a40bb2a083f2e78b562ca8.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.5,
+      "count": 143
+    }
+  },
+  {
+    "id": 26,
+    "title": "White Cotton T-Shirt",
+    "price": 799,
+    "description": "Classic white cotton T-shirt for men, featuring a clean design and a comfortable fit. Ideal for layering or wearing on its own in any casual setting.",
+    "category": "topwear",
+    "colour": "white",
+    "gender": "man",
+    "image": "https://image.hm.com/assets/hm/90/2f/902f3c44aaf5e71951bafb2c20755d923cc5b2ac.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/90/2f/902f3c44aaf5e71951bafb2c20755d923cc5b2ac.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/e9/89/e98900bc1daa73388ff7d41bc77127bf31aa313a.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/22/9d/229d4f31f9ce9d1b973415241c52bdaa5c092fe7.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/b3/4e/b34ef9ca8799d7d6fdb824463488b078beb061f0.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.6,
+      "count": 321
+    }
+  },
+  {
+    "id": 27,
+    "title": "Black Faux Leather Jacket",
+    "price": 4499,
+    "description": "Stylish black faux leather jacket for men featuring a sleek design, zip details, and a modern fit. Perfect for layering over casual or semi-formal outfits.",
+    "category": "topwear",
+    "colour": "black",
+    "gender": "man",
+    "image": "https://image.hm.com/assets/hm/2b/08/2b08044e9885ecfbbebb2346bfb730a1ab11d648.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/2b/08/2b08044e9885ecfbbebb2346bfb730a1ab11d648.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/8c/87/8c874151b27780a528ceb7b489db11ac29640689.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/38/1d/381d8e68f18a5ae9b1b379c05a5145acbc4cb225.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/0d/e4/0de408206a895352c3b8e17fa71ffcc3e4ed67ad.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.4,
+      "count": 281
+    }
+  },
+  {
+    "id": 28,
+    "title": "Silver Ring for Men",
+    "price": 799,
+    "description": "Elegant silver ring for men with a sleek design, perfect for everyday wear or special occasions.",
+    "category": "accessories",
+    "colour": "silver",
+    "gender": "man",
+    "image": "https://image.hm.com/assets/hm/ab/fb/abfbd449a0ef16f9f93d6cd8ee528740546fa120.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/ab/fb/abfbd449a0ef16f9f93d6cd8ee528740546fa120.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/d9/ef/d9ef7b46fbf765528e9a5f9bbd9fe69e8a36360b.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.2,
+      "count": 160
+    }
+  },
+  {
+    "id": 29,
+    "title": "Full Sleeve Black T-Shirt for Men",
+    "price": 1299,
+    "description": "Classic full sleeve black t-shirt for men, designed for comfort and everyday style. Perfect for casual wear or layering.",
+    "category": "topwear",
+    "colour": "black",
+    "gender": "man",
+    "image": "https://image.hm.com/assets/hm/bf/85/bf85e78864ae8956641e5eb6a190830c85eb93b7.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/bf/85/bf85e78864ae8956641e5eb6a190830c85eb93b7.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/81/55/8155bbd952532b9c290f599bfebd099fdafe71c2.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/96/08/9608ba3ff59abb98794f96c2864675ea480a3fa4.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/54/bc/54bc0275dcbbea83d05bc15f290ab4a59f9e78c5.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.5,
+      "count": 200
+    }
+  },
+  {
+    "id": 30,
+    "title": "White Dress for Women",
+    "price": 2499,
+    "description": "Elegant and breezy white dress for women, perfect for casual outings or summer events. Features a comfortable fit and stylish design.",
+    "category": "dress",
+    "colour": "white",
+    "gender": "woman",
+    "image": "https://image.hm.com/assets/hm/f5/a5/f5a5393a005f95fe52dac77f932fd1a371149c10.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/f5/a5/f5a5393a005f95fe52dac77f932fd1a371149c10.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/ca/b4/cab4237ae6270c8594599d884d13d5ac7cf582c6.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/2e/cb/2ecb7600e6e14457d499aeb66f360b3416e5ef06.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/bd/28/bd283224de1544acbb0c6fbe7b911b8302193d2d.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.6,
+      "count": 150
+    }
+  },
+  {
+    "id": 31,
+    "title": "Women Smocked Strappy Dress",
+    "price": 1799,
+    "description": "Lightweight and stylish smocked dress top with thin straps in a vibrant yellow shade. Perfect for warm weather and casual outings.",
+    "category": "topwear",
+    "colour": "yellow",
+    "gender": "woman",
+    "image": "https://image.hm.com/assets/hm/cb/e6/cbe6209de49263914383f8d011d971677f541760.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/cb/e6/cbe6209de49263914383f8d011d971677f541760.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/be/e0/bee0393f375b59a755c6f31a811bee9eeea15474.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/03/0c/030cb40d55095d831479996468b66dfd083e1441.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/8f/e7/8fe7a37f69c825cb779ba61d8b91b53a7295b805.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.4,
+      "count": 85
+    }
+  },
+  {
+    "id": 32,
+    "title": "Men Grey Shorts",
+    "price": 1299,
+    "description": "Comfortable and casual grey shorts for men, designed for everyday wear. Features a relaxed fit and drawstring waist for added comfort.",
+    "category": "bottomwear",
+    "colour": "grey",
+    "gender": "man",
+    "image": "https://image.hm.com/assets/hm/1b/16/1b163cad1ddc9ab0cdd72d3239851798c432140f.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/1b/16/1b163cad1ddc9ab0cdd72d3239851798c432140f.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/87/0f/870fe7867e91945201cbed734f4f2bc28dacdd1f.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/9b/e2/9be2f728b856ce8e59aee671565a4eded7e0a844.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/57/39/573998cffd2d85ccf2b43bd0885c662188074bc9.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.2,
+      "count": 61
+    }
+  },
+  {
+    "id": 33,
+    "title": "Black Unisex Gym Bag",
+    "price": 1799,
+    "description": "Sleek black shoulder bag suitable for both men and women. Ideal for carrying essentials with a minimalist design and adjustable strap.",
+    "category": "accessory",
+    "colour": "black",
+    "gender": "unisex",
+    "image": "https://image.hm.com/assets/hm/fe/0b/fe0b0471287f68dbe979f4fe2698939aeb4f6fd2.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/fe/0b/fe0b0471287f68dbe979f4fe2698939aeb4f6fd2.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/89/0f/890f0ee297f294a45fd5672a9b11c8e1a34a7c69.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/b9/48/b9485f89ae2b725d6cc2fbd7f577bc1a04098472.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.6,
+      "count": 43
+    }
+  },
+  {
+    "id": 34,
+    "title": "Men's Gym Parachute Trousers",
+    "price": 2299,
+    "description": "Lightweight and breathable parachute trousers for men, designed for gym workouts and active lifestyles. Features an adjustable waistband and a relaxed fit for maximum comfort.",
+    "category": "bottomwear",
+    "colour": "black",
+    "gender": "man",
+    "image": "https://image.hm.com/assets/hm/5a/27/5a2747743e461dc82c2a6c628a7770a7e3b975e6.jpg?imwidth=1536",
+    "images": [
+      "https://image.hm.com/assets/hm/5a/27/5a2747743e461dc82c2a6c628a7770a7e3b975e6.jpg?imwidth=1536",
+      "https://image.hm.com/assets/hm/91/4b/914b400a6672a250edb4bba26b8ab9167f2009cb.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/ca/0a/ca0a6b03ab789bf048d72a3c7d756b82a8b78a15.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/09/70/097041b24287c00ffe1f8951668bdcd432d38716.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.5,
+      "count": 38
+    }
+  },
+
+  {
+    "id": 35,
+    "title": "Men's Grey Cargo Pants",
+    "price": 2799,
+    "description": "Versatile grey cargo pants for men featuring a relaxed fit, multiple utility pockets, and a contemporary streetwear look. Ideal for both casual outings and functional wear.",
+    "category": "bottomwear",
+    "colour": "grey",
+    "gender": "man",
+    "image": "https://image.hm.com/assets/hm/13/6c/136cba7bd9271fdc4fe897b1bb33d1913c704448.jpg?imwidth=1260",
+    "images": [
+      "https://image.hm.com/assets/hm/13/6c/136cba7bd9271fdc4fe897b1bb33d1913c704448.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/09/58/0958fce010981a487eea03c1372a8213ee865755.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/ca/a8/caa86a309205c8dc7ee3a36bcbc8333f07fefe8d.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/55/40/5540c3c03bdb5e0312f2efa1de4bd6fd28f01b3a.jpg?imwidth=1260",
+      "https://image.hm.com/assets/hm/82/a6/82a6e06d33825fb81474e52d7e8c17343c549b2f.jpg?imwidth=1260"
+    ],
+    "rating": {
+      "rate": 4.4,
+      "count": 52
+    }
+  }
+]
