@@ -1,4 +1,4 @@
-[
+export const mockProducts = [
   {
     "id": 1,
     "title": "Draped vest top",

@@ -1,13 +1,12 @@
 import express from "express";
 import cors from "cors";
+import productRouter from "../src/routes/productRoutes";
 
 const app = express();
 const PORT = 3001;
 
 app.use(cors());
-app.get("/", (req: any, res: any) => {
-  res.send("Hello from backend!");
-});
+app.use("/products", productRouter);
 
 app.use((req, res) => {
   console.log("Fallback route hit");

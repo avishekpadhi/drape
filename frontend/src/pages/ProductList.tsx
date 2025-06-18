@@ -15,7 +15,7 @@ const ProductList = () => {
   //
 
   const fetchProducts = async () => {
-    const productsData = await axios.get("/src/mocks/mock_products.json");
+    const productsData = await axios.get("http://localhost:3001/products");
     console.log(productsData);
     setProducts(productsData.data);
   };
