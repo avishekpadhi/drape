@@ -6,19 +6,12 @@ import axios from "axios";
 const ProductList = () => {
   const [products, setProducts] = useState<Product[]>([]);
 
-  // const fetchProducts = async () => {
-  //   const res = await fetch("/src/mocks/mock_products.json");
-  //   const data = await res.json();
-  //   console.log(data, "hello0");
-  //   setProducts(data);
-  // };
-  //
-
   const fetchProducts = async () => {
     const productsData = await axios.get("http://localhost:3001/products");
     console.log(productsData);
     setProducts(productsData.data);
   };
+
   useEffect(() => {
     fetchProducts();
   }, []);

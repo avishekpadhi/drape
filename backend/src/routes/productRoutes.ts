@@ -1,9 +1,8 @@
 import express from "express";
 import { mockProducts } from "../data/mock_products";
+import { getAllProducts } from "../controllers/productController";
 const router = express.Router();
 
-router.get("/", async (req, res) => {
-  res.status(200).json(mockProducts);
-});
+router.get("/", getAllProducts);
 
 export default router;
