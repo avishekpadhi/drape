@@ -27,8 +27,8 @@ export const GenderFilter = () => {
       />
       <RadioButton
         name="gender"
-        value="other"
-        label="Other"
+        value="unisex"
+        label="Unisex"
         onChange={handleRadioButtonChange}
       />
     </div>
