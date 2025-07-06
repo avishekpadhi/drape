@@ -1,11 +1,27 @@
 import React, { createContext, useState, useContext, ReactNode } from "react";
 
-const FilterContext = createContext();
+interface FilterContextType {
+  selectedGender: string;
+  setSelectedGender: React.Dispatch<React.SetStateAction<string>>;
+  selectedColour: string;
+  setSelectedColour: React.Dispatch<React.SetStateAction<string>>;
+}
 
-export const FilterProvider = ({ children }) => {
+interface FilterProviderProps {
+  chilren: ReactNode;
+}
+
+const FilterContext = createContext<FilterContextType | undefined>(undefined);
+export const FilterProvider: React.FC<FilterProviderProps> = ({ children }) => {
   const [selectedGender, setSelectedGender] = useState("");
+  const [selectedColour, setSelectedColour] = useState("");
 
-  const value = { selectedGender, setSelectedGender };
+  const value = {
+    selectedGender,
+    setSelectedGender,
+    selectedColour,
+    setSelectedColour,
+  };
 
   return (
     <FilterContext.Provider value={value}>{children}</FilterContext.Provider>
@@ -13,5 +29,9 @@ export const FilterProvider = ({ children }) => {
 };
 
 export const useFilter = () => {
-  return useContext(FilterContext);
+  const context = useContext(FilterContext);
+  if (!context) {
+    throw new Error("useFilter must be used within a FilterProvider");
+  }
+  return context;
 };

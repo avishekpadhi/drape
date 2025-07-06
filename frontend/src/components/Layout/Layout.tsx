@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Sidebar from "../Sidebar/Sidebar";
-import { useFilter } from "../../context/FilterContext";
 
-const Layout = ({ children }) => {
-  const { selectedGender, setSelectedGender } = useFilter();
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Sidebar />

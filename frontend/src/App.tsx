@@ -5,7 +5,7 @@ import Layout from "./components/Layout/Layout";
 import { FilterProvider } from "./context/FilterContext";
 import "./index.css";
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <FilterProvider>
       <Layout>
