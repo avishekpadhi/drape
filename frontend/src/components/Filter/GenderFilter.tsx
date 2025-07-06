@@ -8,9 +8,6 @@ export const GenderFilter = () => {
     setSelectedGender(e.target.value);
   };
 
-  useEffect(() => {
-    console.log(selectedGender);
-  }, [selectedGender]);
   return (
     <div>
       <RadioButton

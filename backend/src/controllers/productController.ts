@@ -7,7 +7,7 @@ export const getAllProducts = async (
   next: NextFunction,
 ) => {
   try {
-    const { gender } = req.query;
+    const { gender, colour } = req.query;
 
     const filter: any = {};
 
@@ -15,7 +15,12 @@ export const getAllProducts = async (
       filter.gender = gender;
     }
 
+    if (colour) {
+      filter.colour = colour;
+    }
+    console.log(colour);
     const products = await Product.find(filter);
+    console.log(products);
     res.status(200).json(products);
   } catch (error) {
     next(error);

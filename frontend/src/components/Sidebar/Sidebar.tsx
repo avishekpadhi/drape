@@ -10,7 +10,7 @@ const Sidebar = () => {
         <div className="mt-10">
           <GenderFilter />
         </div>
-        <div className="mt-10">
+        <div className="mt-10 h-64 overflow-y-auto">
           <ColourFilter />
         </div>
       </div>

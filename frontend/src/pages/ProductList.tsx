@@ -4,23 +4,31 @@ import Listcard from "../components/Listcard/ListCard";
 import { useFilter } from "../context/FilterContext";
 import axios from "axios";
 
-const ProductList = () => {
+const ProductList: React.FC = () => {
   const [products, setProducts] = useState<Product[]>([]);
-  const { selectedGender, onGenderChange } = useFilter();
+  const { selectedGender, selectedColour } = useFilter();
 
   const fetchProducts = async () => {
-    let url = "http://localhost:3001/products";
+    const params = new URLSearchParams();
+
     if (selectedGender) {
-      url += `?gender=${selectedGender}`;
+      params.append("gender", selectedGender);
     }
+
+    if (selectedColour) {
+      // support comma-separated multiple colours if needed later
+      params.append("colour", selectedColour);
+    }
+
+    const url = `http://localhost:3001/products?${params.toString()}`;
     const productsData = await axios.get(url);
-    console.log(productsData);
     setProducts(productsData.data);
   };
 
   useEffect(() => {
     fetchProducts();
-  }, [selectedGender]);
+    console.log(selectedColour);
+  }, [selectedGender, selectedColour]);
 
   return (
     <div className="grid grid-cols-4 2xl:grid-cols-5 gap-2">
