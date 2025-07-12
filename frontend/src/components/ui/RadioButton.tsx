@@ -1,5 +1,17 @@
 // RadioButton.jsx
-const RadioButton = ({
+interface RadioButtonProps {
+  label: string;
+  value: string;
+  checked: boolean;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  name: string;
+  id: string;
+  colorCode?: string;
+  showColorPreview?: boolean;
+  inputRef?: React.RefObject<HTMLInputElement>;
+}
+
+const RadioButton: React.FC<RadioButtonProps> = ({
   label,
   value,
   checked,
@@ -8,10 +20,12 @@ const RadioButton = ({
   id,
   colorCode,
   showColorPreview,
+  inputRef,
 }) => {
   return (
-    <div className="flex items-center mb-4">
+    <div className="flex items-center">
       <input
+        ref={inputRef}
         id={id}
         type="radio"
         value={value}

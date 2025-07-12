@@ -11,15 +11,17 @@ export const ColourFilter = () => {
   return (
     <div>
       {colours.map((colour) => (
-        <RadioButton
-          key={colour.value}
-          name="colour"
-          value={colour.value}
-          label={colour.label}
-          showColorPreview={true}
-          colorCode={colour.code}
-          onChange={handleColourChange}
-        />
+        <div key={colour.value} className="my-3">
+          <RadioButton
+            name="colour"
+            value={colour.value}
+            label={colour.label}
+            showColorPreview={true}
+            colorCode={colour.code}
+            onChange={handleColourChange}
+            checked={selectedColour === colour.value}
+          />
+        </div>
       ))}
     </div>
   );

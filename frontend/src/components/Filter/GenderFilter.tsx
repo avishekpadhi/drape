@@ -1,33 +1,29 @@
-import React, { useEffect } from "react";
-import RadioButton from "../ui/RadioButton";
+import React from "react";
+import RadioButtonCard from "../ui/RadioButtonCard";
 import { useFilter } from "../../context/FilterContext";
+import { genders } from "../../data/data";
 
 export const GenderFilter = () => {
   const { selectedGender, setSelectedGender } = useFilter();
+
   const handleRadioButtonChange = (e) => {
     setSelectedGender(e.target.value);
   };
 
   return (
     <div>
-      <RadioButton
-        name="gender"
-        value="man"
-        label="Man"
-        onChange={handleRadioButtonChange}
-      />
-      <RadioButton
-        name="gender"
-        value="woman"
-        label="Woman"
-        onChange={handleRadioButtonChange}
-      />
-      <RadioButton
-        name="gender"
-        value="unisex"
-        label="Unisex"
-        onChange={handleRadioButtonChange}
-      />
+      {genders.map((gender) => {
+        return (
+          <RadioButtonCard
+            key={gender.value}
+            name="gender"
+            value={gender.value}
+            label={gender.label}
+            checked={selectedGender === gender.value}
+            onChange={handleRadioButtonChange}
+          />
+        );
+      })}
     </div>
   );
 };

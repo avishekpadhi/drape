@@ -27,7 +27,6 @@ const ProductList: React.FC = () => {
 
   useEffect(() => {
     fetchProducts();
-    console.log(selectedColour);
   }, [selectedGender, selectedColour]);
 
   return (

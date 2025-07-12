@@ -10,3 +10,9 @@ export const colours = [
   { label: "White", value: "white", code: "#FFFFFF" },
   { label: "Yellow", value: "yellow", code: "#FFFF00" },
 ];
+
+export const genders = [
+  { label: "Man", value: "man" },
+  { label: "Woman", value: "woman" },
+  { label: "Unisex", value: "unisex" },
+];
