@@ -5,7 +5,7 @@ import { useFilter } from "../../context/FilterContext";
 
 export const ColourFilter = () => {
   const { selectedColour, setSelectedColour } = useFilter();
-  const handleColourChange = (e) => {
+  const handleColourChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedColour(e.target.value);
   };
   return (
@@ -13,6 +13,7 @@ export const ColourFilter = () => {
       {colours.map((colour) => (
         <div key={colour.value} className="my-3">
           <RadioButton
+            id={`${colour.value}`}
             name="colour"
             value={colour.value}
             label={colour.label}

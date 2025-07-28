@@ -8,7 +8,7 @@ interface FilterContextType {
 }
 
 interface FilterProviderProps {
-  chilren: ReactNode;
+  chilren: React.ReactNode;
 }
 
 const FilterContext = createContext<FilterContextType | undefined>(undefined);

@@ -8,7 +8,7 @@ interface RadioButtonProps {
   id: string;
   colorCode?: string;
   showColorPreview?: boolean;
-  inputRef?: React.RefObject<HTMLInputElement>;
+  inputRef?: React.RefObject<HTMLInputElement | null>; // Ensure this is typed correctly
 }
 
 const RadioButton: React.FC<RadioButtonProps> = ({

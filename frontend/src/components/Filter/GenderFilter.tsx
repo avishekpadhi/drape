@@ -6,7 +6,7 @@ import { genders } from "../../data/data";
 export const GenderFilter = () => {
   const { selectedGender, setSelectedGender } = useFilter();
 
-  const handleRadioButtonChange = (e) => {
+  const handleRadioButtonChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSelectedGender(e.target.value);
   };
 
@@ -16,6 +16,7 @@ export const GenderFilter = () => {
         return (
           <RadioButtonCard
             key={gender.value}
+            id={`${gender.value}`}
             name="gender"
             value={gender.value}
             label={gender.label}
