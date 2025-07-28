@@ -1,13 +1,17 @@
 import React from "react";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/Sidebar/Sidebar";
 import ProductList from "./pages/ProductList";
-import Layout from "./components/Layout";
+import Layout from "./components/Layout/Layout";
+import { FilterProvider } from "./context/FilterContext";
+import "./index.css";
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <Layout>
-      <ProductList />
-    </Layout>
+    <FilterProvider>
+      <Layout>
+        <ProductList />
+      </Layout>
+    </FilterProvider>
   );
 };
 

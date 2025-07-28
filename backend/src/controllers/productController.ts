@@ -7,7 +7,20 @@ export const getAllProducts = async (
   next: NextFunction,
 ) => {
   try {
-    const products = await Product.find({});
+    const { gender, colour } = req.query;
+
+    const filter: any = {};
+
+    if (gender) {
+      filter.gender = gender;
+    }
+
+    if (colour) {
+      filter.colour = colour;
+    }
+    console.log(colour);
+    const products = await Product.find(filter);
+    console.log(products);
     res.status(200).json(products);
   } catch (error) {
     next(error);
