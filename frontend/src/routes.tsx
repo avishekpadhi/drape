@@ -1,6 +1,6 @@
 import React from "react";
-import ProductList from "./pages/ProductList";
-import ProductDetails from "./pages/ProductDetails";
+import ProductList from "./pages/Productlist/ProductList";
+import ProductDetails from "./pages/Productdetails/ProductDetails";
 
 interface RouteConfig {
   path: string;
