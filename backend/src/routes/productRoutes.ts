@@ -1,8 +1,11 @@
 import express from "express";
-import { mockProducts } from "../data/mock_products";
-import { getAllProducts } from "../controllers/productController";
+import {
+  getAllProducts,
+  productDetails,
+} from "../controllers/productController";
 const router = express.Router();
 
 router.get("/", getAllProducts);
+router.get("/:id", productDetails);
 
 export default router;

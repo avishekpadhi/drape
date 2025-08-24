@@ -26,3 +26,22 @@ export const getAllProducts = async (
     next(error);
   }
 };
+
+export const productDetails = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
+  try {
+    console.log("It has been hit");
+    const { id } = req.params;
+    const product = await Product.find({ id: Number(id) });
+    if (!product) {
+      return res.status(404).json({ message: "Product not found" });
+    }
+    res.status(200).json(product);
+    console.log(product);
+  } catch (error) {
+    next(error);
+  }
+};
