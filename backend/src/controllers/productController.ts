@@ -33,14 +33,12 @@ export const productDetails = async (
   next: NextFunction,
 ) => {
   try {
-    console.log("It has been hit");
     const { id } = req.params;
-    const product = await Product.find({ id: Number(id) });
+    const product = await Product.findOne({ id: Number(id) });
     if (!product) {
       return res.status(404).json({ message: "Product not found" });
     }
     res.status(200).json(product);
-    console.log(product);
   } catch (error) {
     next(error);
   }
