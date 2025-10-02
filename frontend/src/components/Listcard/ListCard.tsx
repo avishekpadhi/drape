@@ -27,7 +27,7 @@ const Listcard: React.FC<ListcardProps> = ({ product }) => {
         alt="apple watch image"
         className="w-full object-contain rounded bg-white"
       />
-      <h3 className="mt-2 font-medium text-lg">{product.title}</h3>
+      <h4 className="mt-2">{product.title}</h4>
       <p className="text-gray-600 text-xs">Rs. {product.price}.00</p>
     </Link>
   );
