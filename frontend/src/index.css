@@ -34,27 +34,44 @@
         --destructive: 0 100% 50%;
         --destructive-foreground: 210 40% 98%;
         --ring: 335 100% 34%;
+        --radius: 0.5rem;
     }
+}
+
+body {
+    @apply bg-background text-foreground;
+}
+
+h1 {
+    @apply text-4xl;
+}
+
+h2 {
+    @apply text-3xl;
+}
+
+h3 {
+    @apply text-2xl;
+}
+
+h4 {
+    @apply text-xl;
+}
+
+h5 {
+    @apply text-lg;
+}
+
+h6 {
+    @apply text-base;
+}
+
+p {
+    @apply text-base;
 }
 
 @layer components {
     .btn {
         @apply px-4 py-2 rounded-lg font-medium transition-all border font-sans;
-    }
-
-    .btn-primary {
-        @apply text-primary-foreground
-                   bg-primary
-                   border-primary-dark
-                   hover:bg-primary-dark
-                   hover:border-primary-darker
-                   hover:shadow-md
-                   focus:outline-none
-                   focus:ring-2
-                   focus:ring-ring;
-    }
-
-    .btn-clear {
-        @apply bg-primary text-background text-center;
     }
 }

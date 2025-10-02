@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Product } from "../types";
-import Listcard from "../components/Listcard/ListCard";
-import { useFilter } from "../context/FilterContext";
+import { Product } from "../../types";
+import Listcard from "../../components/Listcard/ListCard";
+import { useFilter } from "../../context/FilterContext";
 import axios from "axios";
 
 const ProductList: React.FC = () => {

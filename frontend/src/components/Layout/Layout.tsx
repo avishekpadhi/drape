@@ -1,15 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import Sidebar from "../Sidebar/Sidebar";
+import Navbar from "../Navbar/Navbar";
 
 interface LayoutProps {
   children: React.ReactNode;
+  showSidebar?: boolean;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<LayoutProps> = ({ showSidebar = true, children }) => {
   return (
     <>
-      <Sidebar />
-      <div className="ml-52 p-4">{children}</div>
+      <Navbar />
+      {showSidebar && <Sidebar />}
+      <div className={`mt-14 p-4${showSidebar ? " ml-52" : ""}`}>
+        {children}
+      </div>
     </>
   );
 };
