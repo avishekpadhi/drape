@@ -1,5 +1,6 @@
 import Ratings from "../../components/Ratings/Ratings";
 import { Product } from "../../types";
+import PurchaseAction from "./PurchaseAction";
 
 type ProductProps = {
   product: Product;
@@ -17,6 +18,7 @@ const ProductDescription = ({ product }: ProductProps) => {
       </div>
 
       <p className="mt-10 text-border">{product.description}</p>
+      <PurchaseAction />
     </div>
   );
 };
