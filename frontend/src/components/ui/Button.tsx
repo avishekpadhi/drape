@@ -3,11 +3,13 @@ import React from "react";
 import { cn } from "../../lib/utils";
 
 export const buttonVariants = cva(
-  "bg-primary text-white btn flex items-center gap-2",
+  "bg-primary text-white btn flex items-center gap-2 cursor-pointer",
   {
     variants: {
       variant: {
-        default: "hover:shadow-md focus:outline-none",
+        default: "hover:shadow-md focus:outline-none hover:bg-primary-dark",
+        outline:
+          "bg-background border border-accent-dark text-foreground hover:border-black",
       },
       size: {
         default: "h-10 px-4 py-2",
@@ -15,7 +17,7 @@ export const buttonVariants = cva(
         lg: "h-11 px-8 rounded-md",
       },
     },
-  }
+  },
 );
 
 export interface ButtonProps
@@ -35,5 +37,5 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         {children}
       </button>
     );
-  }
+  },
 );
