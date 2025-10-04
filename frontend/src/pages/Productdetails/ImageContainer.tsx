@@ -19,30 +19,27 @@ const ImageContainer = ({ product }: ImageContainerProps) => {
   }
 
   return (
-    <div className="flex gap-6">
-      <div className="flex flex-row w-2/5 items-start">
-        {/* Thumbnail Grid */}
-        <div className="flex flex-col gap-4 w-1/5 mr-4">
-          {product.images?.map((img, idx) => (
-            <img
-              key={idx}
-              src={img}
-              onClick={() => setSelectedImage(img)}
-              className={`object-cover object-center h-16 w-full rounded-lg cursor-pointer transition
-                ${selectedImage === img ? "ring-2 ring-blue-500" : ""}`}
-              alt={`thumbnail-${idx}`}
-            />
-          ))}
-        </div>
-
-        {/* Main Image */}
-        <div className="w-4/5">
+    <div className="flex gap-6 w-full">
+      <div className="flex flex-col gap-3 w-1/5">
+        {product.images?.map((img, idx) => (
           <img
-            className="w-full aspect-[3/4] object-cover object-center rounded-lg"
-            src={selectedImage || ""}
-            alt="main product"
+            key={idx}
+            src={img}
+            onClick={() => setSelectedImage(img)}
+            className={`object-cover h-16 w-full rounded-lg cursor-pointer
+          transition ${selectedImage === img ? "ring-2 ring-blue-500" : ""}`}
+            alt={`thumbnail-${idx}`}
           />
-        </div>
+        ))}
+      </div>
+
+      {/* Main Image */}
+      <div className="w-4/5">
+        <img
+          className="w-full aspect-[3/4] object-cover rounded-lg"
+          src={selectedImage || ""}
+          alt="main product"
+        />
       </div>
     </div>
   );
