@@ -18,7 +18,9 @@ const ProductDescription = ({ product }: ProductProps) => {
       </div>
 
       <p className="mt-10 text-border">{product.description}</p>
-      <PurchaseAction />
+      <div className="mt-16">
+        <PurchaseAction />
+      </div>
     </div>
   );
 };
