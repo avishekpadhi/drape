@@ -3,38 +3,50 @@
 
 @layer base {
     :root {
-        --background: 0 0% 100%;
-        --foreground: 25 21% 22%;
-        --muted: 210 40% 96.1%;
-        --muted-foreground: 215.4 16.3% 46.9%;
-        --popover: 0 0% 100%;
-        --popover-foreground: 222.2 47.4% 11.2%;
-        --border: 25 5% 45%;
-        --input: 210 40% 96%;
-        --card: 0 0% 100%;
-        --card-foreground: 222.2 47.4% 11.2%;
-        --primary: 217 91% 60%; /* Base → close to Tailwind's blue-500 */
-        --primary-foreground: 0 0% 100%; /* White text for contrast */
-        --primary-dark: 217 91% 50%; /* Similar to blue-600 */
-        --primary-darker: 217 91% 40%; /* Similar to blue-700 */
-        --primary-lighter: 217 91% 70%; /* Similar to blue-400 or slightly lighter */
+        /* Base colors */
+        --background: 0 0% 100%; /* white → Tailwind: bg-white */
+        --foreground: 25 21% 22%; /* very dark gray → Tailwind: text-gray-800 */
+        --muted: 210 40% 96.1%; /* very light gray → Tailwind: bg-gray-100 */
+        --muted-foreground: 215.4 16.3% 46.9%; /* medium gray → Tailwind: text-gray-600 */
+        --popover: 0 0% 100%; /* white → Tailwind: bg-white */
+        --popover-foreground: 222.2 47.4% 11.2%; /* almost black → Tailwind: text-gray-900 */
+        --border: 25 5% 45%; /* dark gray → Tailwind: border-gray-700 */
+        --input: 210 40% 96%; /* very light gray → Tailwind: bg-gray-100 */
+        --card: 0 0% 100%; /* white → Tailwind: bg-white */
+        --card-foreground: 222.2 47.4% 11.2%; /* almost black → Tailwind: text-gray-900 */
 
-        --secondary: 0 0% 11%;
-        --secondary-foreground: 0 0% 100%;
-        --secondary-dark: 0 0% 11%;
-        --secondary-darker: 0 0% 11%;
-        --accent: 47 40% 88%;
-        --accent-foreground: 30 6% 25%;
-        --accent-light: 45 44% 96%;
-        --accent-lightest: 48 100% 98%;
-        --accent-dark: 20 2% 72%;
-        --accent-darker: 0 1% 54%;
-        --safe: 165 70% 56%;
-        --safe-foreground: 0 0% 100%;
-        --destructive: 0 100% 50%;
-        --destructive-foreground: 210 40% 98%;
-        --ring: 335 100% 34%;
-        --radius: 0.5rem;
+        /* Primary (blue-ish) */
+        --primary: 217 91% 60%; /* bright blue → Tailwind: blue-500 */
+        --primary-foreground: 0 0% 100%; /* white → Tailwind: text-white */
+        --primary-dark: 217 91% 50%; /* slightly darker blue → Tailwind: blue-600 */
+        --primary-darker: 217 91% 40%; /* darker blue → Tailwind: blue-700 */
+        --primary-lighter: 217 91% 70%; /* lighter blue → Tailwind: blue-400 */
+
+        /* Secondary (almost black) */
+        --secondary: 0 0% 11%; /* very dark gray → Tailwind: gray-900 */
+        --secondary-foreground: 0 0% 100%; /* white → Tailwind: text-white */
+        --secondary-dark: 0 0% 11%; /* same as secondary → Tailwind: gray-900 */
+        --secondary-darker: 0 0% 11%; /* same as secondary → Tailwind: gray-900 */
+
+        /* Accent (neutral/light accent colors) */
+        --accent: 47 40% 88%; /* very light green-ish → Tailwind: green-100 or lime-100 */
+        --accent-foreground: 30 6% 25%; /* dark olive gray → Tailwind: text-gray-800 */
+        --accent-light: 45 44% 96%; /* very light → Tailwind: green-50 */
+        --accent-lightest: 48 100% 98%; /* almost white → Tailwind: green-50/white */
+        --accent-dark: 20 2% 72%; /* light gray-brown → Tailwind: gray-300 */
+        --accent-darker: 0 1% 54%; /* medium gray → Tailwind: gray-500 */
+
+        /* Safe / success */
+        --safe: 165 70% 56%; /* bright green → Tailwind: green-500 */
+        --safe-foreground: 0 0% 100%; /* white → Tailwind: text-white */
+
+        /* Destructive / danger */
+        --destructive: 0 100% 50%; /* red → Tailwind: red-500 */
+        --destructive-foreground: 210 40% 98%; /* almost white → Tailwind: text-white or gray-50 */
+
+        /* Others */
+        --ring: 335 100% 34%; /* bright pink/red → Tailwind: rose-600 */
+        --radius: 0.5rem; /* border radius → Tailwind: rounded-md */
     }
 }
 

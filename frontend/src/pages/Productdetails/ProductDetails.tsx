@@ -3,6 +3,7 @@ import ImageContainer from "./ImageContainer";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { Product } from "../../types";
+import ProductDescription from "./ProductDescription";
 
 const ProductDetails = () => {
   const { id } = useParams<{ id: string }>();
@@ -27,8 +28,16 @@ const ProductDetails = () => {
   }
 
   return (
-    <div className="flex flex-col container mx-auto">
-      <ImageContainer product={product} />
+    <div className="flex container mx-auto w-full py-10 gap-12">
+      {/* Left: Images */}
+      <div className="w-2/5">
+        <ImageContainer product={product} />
+      </div>
+
+      {/* Right: Description */}
+      <div className="w-3/5">
+        <ProductDescription product={product} />
+      </div>
     </div>
   );
 };
