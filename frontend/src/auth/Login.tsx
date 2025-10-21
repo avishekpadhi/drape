@@ -1,4 +1,3 @@
-import React from "react";
 import { useGoogleLogin } from "@react-oauth/google";
 import { googleAuth } from "../services/OauthService";
 import { useNavigate } from "react-router-dom";
@@ -14,11 +13,10 @@ const Login = () => {
         const obj = { email, name, token };
         localStorage.setItem("userInfo", JSON.stringify(obj));
         navigate("/products");
-        console.log("result.data.user ----", result.data.user);
-        console.log(token);
       }
     } catch (err) {
       console.log("Error while fetching gogole auth details:", err);
+      alert("Google login failed. Please try again.");
     }
   };
 
@@ -30,7 +28,11 @@ const Login = () => {
 
   return (
     <div className="container mx-auto w-full">
-      <button className="cursor-pointer btn" onClick={googleLogin}>
+      <button
+        className="cursor-pointer btn"
+        onClick={googleLogin}
+        aria-label="Login with Google"
+      >
         Login with Google
       </button>
     </div>
