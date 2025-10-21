@@ -17,7 +17,9 @@ export const googleLogin = async (req: Request, res: Response) => {
     const googleRes = await oauth2client.getToken(code);
     oauth2client.setCredentials(googleRes.tokens);
 
-    const { email, name } = await verifyGoogleUser(tokens.access_token);
+    const { email, name } = await verifyGoogleUser(
+      googleRes.tokens.access_token
+    );
 
     const user =
       (await User.findOne({ email })) ?? (await User.create({ name, email }));
