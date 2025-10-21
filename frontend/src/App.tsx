@@ -10,18 +10,6 @@ import Layout from "./components/Layout/Layout";
 import { FilterProvider } from "./context/FilterContext";
 import { AppRoutes } from "./routes";
 import "./index.css";
-import { GoogleOAuthProvider } from "@react-oauth/google";
-import Login from "./auth/Login";
-
-const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID!;
-
-export const GoogleAuthWrapper = () => {
-  return (
-    <GoogleOAuthProvider clientId={clientId}>
-      <Login />
-    </GoogleOAuthProvider>
-  );
-};
 
 const AppContent: React.FC = () => {
   const location = useLocation();
