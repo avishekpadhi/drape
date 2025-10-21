@@ -15,11 +15,6 @@ app.use("/auth", authRouter);
 
 connectDB();
 
-app.use((req, res) => {
-  console.log("Fallback route hit");
-  res.status(404).send("Not found");
-});
-
 app.listen(PORT, () => {
   console.log(`✅ Server running on http://localhost:${PORT}`);
 });
