@@ -1,6 +1,9 @@
 import React from "react";
 import ProductList from "./pages/Productlist/ProductList";
 import ProductDetails from "./pages/Productdetails/ProductDetails";
+import Login from "./auth/Login";
+import { Navigate } from "react-router-dom";
+import GoogleAuthWrapper from "./auth/GoogleAuthWrapper";
 
 interface RouteConfig {
   path: string;
@@ -12,15 +15,29 @@ interface RouteConfig {
 
 export const AppRoutes: RouteConfig[] = [
   {
-    path: "/",
+    path: "/products",
     component: <ProductList />,
     layoutProps: {
       showSidebar: true,
     },
   },
   {
-    path: "/product/:id", // Example path for product details
+    path: "/product/:id",
     component: <ProductDetails />,
+    layoutProps: {
+      showSidebar: false,
+    },
+  },
+  {
+    path: "/login",
+    component: <GoogleAuthWrapper />,
+    layoutProps: {
+      showSidebar: false,
+    },
+  },
+  {
+    path: "/",
+    component: <Navigate to="/login" />,
     layoutProps: {
       showSidebar: false,
     },
