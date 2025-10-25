@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import { useGoogleLogin } from "@react-oauth/google";
 import { googleAuth } from "../services/OauthService";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 
 const Login = () => {
+  const { currentUser, setCurrentUser } = useContext(AuthContext);
+
   const navigate = useNavigate();
   const responseGoogle = async (authResult: any) => {
     try {
@@ -11,6 +15,7 @@ const Login = () => {
         const { email, name } = result.data.user;
         const token = result.data.token;
         const obj = { email, name, token };
+        setCurrentUser({ email, name });
         localStorage.setItem("userInfo", JSON.stringify(obj));
         navigate("/products");
       }

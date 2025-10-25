@@ -10,6 +10,7 @@ import Layout from "./components/Layout/Layout";
 import { FilterProvider } from "./context/FilterContext";
 import { AppRoutes } from "./routes";
 import "./index.css";
+import { AuthProvider } from "./context/AuthContext";
 
 const AppContent: React.FC = () => {
   const location = useLocation();
@@ -39,7 +40,9 @@ const AppContent: React.FC = () => {
 const App: React.FC = () => {
   return (
     <BrowserRouter>
-      <AppContent />
+      <AuthProvider>
+        <AppContent />
+      </AuthProvider>
     </BrowserRouter>
   );
 };
