@@ -19,10 +19,23 @@ const AppContent: React.FC = () => {
   );
 
   const showSidebar = currentRouteConfig?.layoutProps?.showSidebar ?? true;
+  const useLayout = currentRouteConfig?.layoutProps?.useLayout ?? true;
 
   return (
     <FilterProvider>
-      <Layout showSidebar={showSidebar}>
+      {useLayout ? (
+        <Layout showSidebar={showSidebar}>
+          <Routes>
+            {AppRoutes.map((route) => (
+              <Route
+                key={route.path}
+                path={route.path}
+                element={route.component}
+              />
+            ))}
+          </Routes>
+        </Layout>
+      ) : (
         <Routes>
           {AppRoutes.map((route) => (
             <Route
@@ -32,7 +45,7 @@ const AppContent: React.FC = () => {
             />
           ))}
         </Routes>
-      </Layout>
+      )}
     </FilterProvider>
   );
 };

@@ -3,6 +3,8 @@ import { useGoogleLogin } from "@react-oauth/google";
 import { googleAuth } from "../services/OauthService";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
+import googleIcon from "@/assets/google.png";
+import drape from "@/assets/drape.png";
 
 const Login = () => {
   const { currentUser, setCurrentUser } = useContext(AuthContext);
@@ -32,14 +34,32 @@ const Login = () => {
   });
 
   return (
-    <div className="container mx-auto w-full">
-      <button
-        className="cursor-pointer btn"
-        onClick={googleLogin}
-        aria-label="Login with Google"
-      >
-        Login with Google
-      </button>
+    <div className="w-full h-screen grid grid-cols-1 md:grid-cols-2">
+      <div className="hidden md:block">
+        <img
+          src={drape}
+          alt="Login visual"
+          className="w-full h-screen object-cover"
+        />
+      </div>
+
+      <div className="flex flex-col items-center justify-center px-10">
+        <div className="w-full max-w-sm">
+          <h1 className="text-3xl font-semibold mb-2 text-gray-800">
+            Welcome.
+          </h1>
+          <p className="text-gray-500 mb-8">Sign in to continue.</p>
+
+          <button
+            className="w-full cursor-pointer border border-gray-300 rounded-xl py-3 flex items-center justify-center gap-3 cursor-pointer hover:bg-gray-100 transition"
+            onClick={googleLogin}
+            aria-label="Login with Google"
+          >
+            <img src={googleIcon} alt="Google icon" className="w-5 h-5" />
+            <span className="font-medium">Login with Google</span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

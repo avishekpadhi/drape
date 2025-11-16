@@ -10,6 +10,7 @@ interface RouteConfig {
   component: React.ReactElement;
   layoutProps?: {
     showSidebar?: boolean;
+    useLayout?: boolean;
   };
 }
 
@@ -19,6 +20,7 @@ export const AppRoutes: RouteConfig[] = [
     component: <ProductList />,
     layoutProps: {
       showSidebar: true,
+      useLayout: true,
     },
   },
   {
@@ -26,6 +28,7 @@ export const AppRoutes: RouteConfig[] = [
     component: <ProductDetails />,
     layoutProps: {
       showSidebar: false,
+      useLayout: true,
     },
   },
   {
@@ -33,6 +36,7 @@ export const AppRoutes: RouteConfig[] = [
     component: <GoogleAuthWrapper />,
     layoutProps: {
       showSidebar: false,
+      useLayout: false, // 🚀 Login page WITHOUT Layout
     },
   },
   {
@@ -40,6 +44,7 @@ export const AppRoutes: RouteConfig[] = [
     component: <Navigate to="/login" />,
     layoutProps: {
       showSidebar: false,
+      useLayout: false,
     },
   },
 ];
