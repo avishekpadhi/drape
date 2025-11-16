@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import { FilterProvider } from "./context/FilterContext";
-import { AppRoutes } from "./routes";
+import { AppRoutes } from "./routes/routes";
 import "./index.css";
 import { AuthProvider } from "./context/AuthContext";
 

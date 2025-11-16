@@ -1,9 +1,10 @@
 import React from "react";
-import ProductList from "./pages/Productlist/ProductList";
-import ProductDetails from "./pages/Productdetails/ProductDetails";
-import Login from "./auth/Login";
+import ProductList from "../pages/Productlist/ProductList";
+import ProductDetails from "../pages/Productdetails/ProductDetails";
+import Login from "../auth/Login";
 import { Navigate } from "react-router-dom";
-import GoogleAuthWrapper from "./auth/GoogleAuthWrapper";
+import GoogleAuthWrapper from "../auth/GoogleAuthWrapper";
+import AuthenticatedRoute from "./AuthenticatedRoutes";
 
 interface RouteConfig {
   path: string;
@@ -33,10 +34,14 @@ export const AppRoutes: RouteConfig[] = [
   },
   {
     path: "/login",
-    component: <GoogleAuthWrapper />,
+    component: (
+      <AuthenticatedRoute>
+        <GoogleAuthWrapper />
+      </AuthenticatedRoute>
+    ),
     layoutProps: {
       showSidebar: false,
-      useLayout: false, // 🚀 Login page WITHOUT Layout
+      useLayout: false,
     },
   },
   {

@@ -7,22 +7,25 @@ import googleIcon from "@/assets/google.png";
 import drape from "@/assets/drape.png";
 
 const Login = () => {
-  const { currentUser, setCurrentUser } = useContext(AuthContext);
-
+  const { login } = useContext(AuthContext);
   const navigate = useNavigate();
+
   const responseGoogle = async (authResult: any) => {
     try {
-      if (authResult["code"]) {
-        const result = await googleAuth(authResult["code"]);
-        const { email, name } = result.data.user;
-        const token = result.data.token;
-        const obj = { email, name, token };
-        setCurrentUser({ email, name });
-        localStorage.setItem("userInfo", JSON.stringify(obj));
+      if (authResult.code) {
+        const res = await googleAuth(authResult.code);
+
+        const user = {
+          email: res.data.user.email,
+          name: res.data.user.name,
+          token: res.data.token,
+        };
+
+        login(user);
         navigate("/products");
       }
     } catch (err) {
-      console.log("Error while fetching gogole auth details:", err);
+      console.error("Google login error:", err);
       alert("Google login failed. Please try again.");
     }
   };
@@ -51,7 +54,7 @@ const Login = () => {
           <p className="text-gray-500 mb-8">Sign in to continue.</p>
 
           <button
-            className="w-full cursor-pointer border border-gray-300 rounded-xl py-3 flex items-center justify-center gap-3 cursor-pointer hover:bg-gray-100 transition"
+            className="w-full border border-gray-300 rounded-xl py-3 flex items-center justify-center gap-3 hover:bg-gray-100 transition"
             onClick={googleLogin}
             aria-label="Login with Google"
           >
