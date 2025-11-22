@@ -1,89 +1,209 @@
 @import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
 @config "../tailwind.config.ts";
 
 @layer base {
-    :root {
-        /* Base colors */
-        --background: 0 0% 100%; /* white → Tailwind: bg-white */
-        --foreground: 25 21% 22%; /* very dark gray → Tailwind: text-gray-800 */
-        --muted: 210 40% 96.1%; /* very light gray → Tailwind: bg-gray-100 */
-        --muted-foreground: 215.4 16.3% 46.9%; /* medium gray → Tailwind: text-gray-600 */
-        --popover: 0 0% 100%; /* white → Tailwind: bg-white */
-        --popover-foreground: 222.2 47.4% 11.2%; /* almost black → Tailwind: text-gray-900 */
-        --border: 25 5% 45%; /* dark gray → Tailwind: border-gray-700 */
-        --input: 210 40% 96%; /* very light gray → Tailwind: bg-gray-100 */
-        --card: 0 0% 100%; /* white → Tailwind: bg-white */
-        --card-foreground: 222.2 47.4% 11.2%; /* almost black → Tailwind: text-gray-900 */
+  :root {
+    /* Base colors */
+    --background: 0 0% 100%; /* white → Tailwind: bg-white */
+    --foreground: 25 21% 22%; /* very dark gray → Tailwind: text-gray-800 */
+    --muted: 210 40% 96.1%; /* very light gray → Tailwind: bg-gray-100 */
+    --muted-foreground: 215.4 16.3% 46.9%; /* medium gray → Tailwind: text-gray-600 */
+    --popover: 0 0% 100%; /* white → Tailwind: bg-white */
+    --popover-foreground: 222.2 47.4% 11.2%; /* almost black → Tailwind: text-gray-900 */
+    --border: 25 5% 45%; /* dark gray → Tailwind: border-gray-700 */
+    --input: 210 40% 96%; /* very light gray → Tailwind: bg-gray-100 */
+    --card: 0 0% 100%; /* white → Tailwind: bg-white */
+    --card-foreground: 222.2 47.4% 11.2%; /* almost black → Tailwind: text-gray-900 */
 
-        /* Primary (blue-ish) */
-        --primary: 217 91% 60%; /* bright blue → Tailwind: blue-500 */
-        --primary-foreground: 0 0% 100%; /* white → Tailwind: text-white */
-        --primary-dark: 217 91% 50%; /* slightly darker blue → Tailwind: blue-600 */
-        --primary-darker: 217 91% 40%; /* darker blue → Tailwind: blue-700 */
-        --primary-lighter: 217 91% 70%; /* lighter blue → Tailwind: blue-400 */
+    /* Primary (blue-ish) */
+    --primary: 217 91% 60%; /* bright blue → Tailwind: blue-500 */
+    --primary-foreground: 0 0% 100%; /* white → Tailwind: text-white */
+    --primary-dark: 217 91% 50%; /* slightly darker blue → Tailwind: blue-600 */
+    --primary-darker: 217 91% 40%; /* darker blue → Tailwind: blue-700 */
+    --primary-lighter: 217 91% 70%; /* lighter blue → Tailwind: blue-400 */
 
-        /* Secondary (almost black) */
-        --secondary: 0 0% 11%; /* very dark gray → Tailwind: gray-900 */
-        --secondary-foreground: 0 0% 100%; /* white → Tailwind: text-white */
-        --secondary-dark: 0 0% 11%; /* same as secondary → Tailwind: gray-900 */
-        --secondary-darker: 0 0% 11%; /* same as secondary → Tailwind: gray-900 */
+    /* Secondary (almost black) */
+    --secondary: 0 0% 11%; /* very dark gray → Tailwind: gray-900 */
+    --secondary-foreground: 0 0% 100%; /* white → Tailwind: text-white */
+    --secondary-dark: 0 0% 11%; /* same as secondary → Tailwind: gray-900 */
+    --secondary-darker: 0 0% 11%; /* same as secondary → Tailwind: gray-900 */
 
-        /* Accent (neutral/light accent colors) */
-        --accent: 47 40% 88%; /* very light green-ish → Tailwind: green-100 or lime-100 */
-        --accent-foreground: 30 6% 25%; /* dark olive gray → Tailwind: text-gray-800 */
-        --accent-light: 45 44% 96%; /* very light → Tailwind: green-50 */
-        --accent-lightest: 48 100% 98%; /* almost white → Tailwind: green-50/white */
-        --accent-dark: 20 2% 72%; /* light gray-brown → Tailwind: gray-300 */
-        --accent-darker: 0 1% 54%; /* medium gray → Tailwind: gray-500 */
+    /* Accent (neutral/light accent colors) */
+    --accent: 47 40% 88%; /* very light green-ish → Tailwind: green-100 or lime-100 */
+    --accent-foreground: 30 6% 25%; /* dark olive gray → Tailwind: text-gray-800 */
+    --accent-light: 45 44% 96%; /* very light → Tailwind: green-50 */
+    --accent-lightest: 48 100% 98%; /* almost white → Tailwind: green-50/white */
+    --accent-dark: 20 2% 72%; /* light gray-brown → Tailwind: gray-300 */
+    --accent-darker: 0 1% 54%; /* medium gray → Tailwind: gray-500 */
 
-        /* Safe / success */
-        --safe: 165 70% 56%; /* bright green → Tailwind: green-500 */
-        --safe-foreground: 0 0% 100%; /* white → Tailwind: text-white */
+    /* Safe / success */
+    --safe: 165 70% 56%; /* bright green → Tailwind: green-500 */
+    --safe-foreground: 0 0% 100%; /* white → Tailwind: text-white */
 
-        /* Destructive / danger */
-        --destructive: 0 100% 50%; /* red → Tailwind: red-500 */
-        --destructive-foreground: 210 40% 98%; /* almost white → Tailwind: text-white or gray-50 */
+    /* Destructive / danger */
+    --destructive: 0 100% 50%; /* red → Tailwind: red-500 */
+    --destructive-foreground: 210 40% 98%; /* almost white → Tailwind: text-white or gray-50 */
 
-        /* Others */
-        --ring: 335 100% 34%; /* bright pink/red → Tailwind: rose-600 */
-        --radius: 0.5rem; /* border radius → Tailwind: rounded-md */
-    }
+    /* Others */
+    --ring: 335 100% 34%; /* bright pink/red → Tailwind: rose-600 */
+    --radius: 0.5rem; /* border radius → Tailwind: rounded-md */
+  }
 }
 
 body {
-    @apply bg-background text-foreground;
+  @apply bg-background text-foreground;
 }
 
 h1 {
-    @apply text-4xl;
+  @apply text-4xl;
 }
 
 h2 {
-    @apply text-3xl;
+  @apply text-3xl;
 }
 
 h3 {
-    @apply text-2xl;
+  @apply text-2xl;
 }
 
 h4 {
-    @apply text-xl;
+  @apply text-xl;
 }
 
 h5 {
-    @apply text-lg;
+  @apply text-lg;
 }
 
 h6 {
-    @apply text-base;
+  @apply text-base;
 }
 
 p {
-    @apply text-base;
+  @apply text-base;
 }
 
 @layer components {
-    .btn {
-        @apply px-4 py-2 rounded-lg font-medium transition-all border font-sans;
-    }
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-all border font-sans;
+  }
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }

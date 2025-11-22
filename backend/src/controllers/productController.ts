@@ -4,7 +4,7 @@ import { Request, Response, NextFunction } from "express";
 export const getAllProducts = async (
   req: Request,
   res: Response,
-  next: NextFunction,
+  next: NextFunction
 ) => {
   try {
     const { gender, colour } = req.query;
@@ -18,9 +18,7 @@ export const getAllProducts = async (
     if (colour) {
       filter.colour = colour;
     }
-    console.log(colour);
     const products = await Product.find(filter);
-    console.log(products);
     res.status(200).json(products);
   } catch (error) {
     next(error);
@@ -30,7 +28,7 @@ export const getAllProducts = async (
 export const productDetails = async (
   req: Request,
   res: Response,
-  next: NextFunction,
+  next: NextFunction
 ) => {
   try {
     const { id } = req.params;
